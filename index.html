@@ -10,15 +10,25 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <style>
+        body,
+        html {
+            overflow-x: hidden;
+        }
+
         .heading1 {
             font-size: 55px;
             font-weight: 900;
         }
 
         .img11 {
-            width: 100%;
-            height: 90%;
+            max-width: 100%;
+            height: auto;
             object-fit: cover;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
         }
 
         .brands a:hover {
@@ -51,6 +61,17 @@
 
         .accordion-button:not(.collapsed)::after {
             filter: invert(0) brightness(0);
+        }
+
+        @media(max-width: 576px) {
+            .heading1 {
+                font-size: 35px;
+            }
+
+            svg {
+                width: 30px !important;
+                height: 30px !important;
+            }
         }
     </style>
 </head>
@@ -88,7 +109,7 @@
     <div class="bg-black mt-5">
         <div class="container mt-md-5 py-md-5 ">
             <div class="row">
-                <div class="col-md-6 mt-5 py-md-5 px-3" data-aos="fade-right">
+                <div class="col-md-6 mt-5 py-md-5 px-md-3" data-aos="fade-right">
                     <h1 class="heading1 text-white">Building digital <br> products & brands.</h1>
                     <p class="text-secondary fs-5 my-3">This is the responsive landing page built using
                         HTML, CSS and Bootstrap. It is fully responsive according to the width of different devices.</p>
@@ -100,9 +121,9 @@
                             style="background-color: blueviolet;">Get Figma file</button>
                     </div>
                 </div>
-                <div class="col-md-6 mt-5 px-5 text-center" data-aos="fade-left">
+                <div class="col-md-6 mt-5 px-md-5 text-center" data-aos="fade-left">
                     <img src="https://demo.themesberg.com/landwind/images/hero.png" alt="Dashboard Image"
-                        class="img-fluid img11 ps-5">
+                        class="img-fluid img11">
                 </div>
             </div>
             <div class="row py-3 brands d-none d-md-block">
@@ -123,7 +144,7 @@
         <div class="bg-dark text-white">
             <div class="container py-5">
                 <div class="row">
-                    <div class="col-md-6 mb-5 mb-md-0 ps-3" data-aos="fade-right">
+                    <div class="col-md-6 mb-5 mb-md-0" data-aos="fade-right">
                         <h2 class="fw-bold">Work with tools you already use</h2>
                         <p class="text-secondary fs-5">Deliver great service experiences fast - without the complexity
                             of traditional ITSM solutions. Accelerate critical development work, eliminate toil, and
@@ -152,7 +173,7 @@
                     <div class="col-md-6 mb-5 mb-md-0 " data-aos="fade-right">
                         <img src="https://demo.themesberg.com/landwind/images/feature-2.png" alt="" class="w-100">
                     </div>
-                    <div class="col-md-6 ps-3" data-aos="fade-left">
+                    <div class="col-md-6" data-aos="fade-left">
                         <h2 class="fw-bold">We invest in the world’s potential</h2>
                         <p class="text-secondary fs-5">Deliver great service experiences fast - without the complexity
                             of traditional ITSM solutions. Accelerate critical development work, eliminate toil, and
@@ -181,7 +202,7 @@
         <div class="bg-black text-white">
             <div class="container py-5">
                 <div class="row">
-                    <div class="col-md-6 mb-5 mb-md-0 ps-3" data-aos="fade-up">
+                    <div class="col-md-6 mb-5 mb-md-0" data-aos="fade-up">
                         <p style="color: blueviolet;">Trusted Worldwide</p>
                         <h1>Trusted by over 600 million users and 10,000 teams</h1>
                         <p class="py-2 text-secondary fs-5">Our rigorous security and compliance standards are at the
@@ -190,7 +211,7 @@
                         <p style="color: blueviolet;">Explore Legality Guide <i class="bi bi-arrow-right"></i></p>
                         <p style="color: blueviolet;">Visit the Trust Center <i class="bi bi-arrow-right"></i></p>
                     </div>
-                    <div class="col-md-6 ps-md-4 ps-3" data-aos="fade-up">
+                    <div class="col-md-6 ps-md-4 ps-md-3" data-aos="fade-up">
                         <div class="row">
                             <div class="col-md-6">
                                 <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"
@@ -266,7 +287,7 @@
                     <h3 class="fw-bold">Designed for business teams like yours</h3>
                     <p class="mb-5 text-secondary fs-5 mt-3">Here at Ubitech we focus on markets where technology,
                         innovation, and capital can unlock long-term value and drive economic growth.</p>
-                    <div class="col-md-4 px-md- px-3">
+                    <div class="col-md-4 px-md-3">
                         <div class="card border bg-dark text-white rounded-4 p-4 mb-5 mb-md-0" data-aos="fade-right">
                             <p class="text-center fs-3">Starter</p>
                             <p class="text-center text-secondary">Best option for personal use & for your next project.
@@ -284,7 +305,7 @@
                                 Started</button>
                         </div>
                     </div>
-                    <div class="col-md-4 pe-3">
+                    <div class="col-md-4 pe-md-3">
                         <div class="card border bg-dark text-white rounded-4 p-4 mb-5 mb-md-0" data-aos="fade-up">
                             <p class="text-center fs-3">Company</p>
                             <p class="text-center text-secondary">Relevant for multiple users, extended & premium
@@ -301,7 +322,7 @@
                                 Get Started</button>
                         </div>
                     </div>
-                    <div class="col-md-4 pe-3">
+                    <div class="col-md-4 pe-md-3">
                         <div class="card border bg-dark text-white rounded-4 p-4" data-aos="fade-left">
                             <p class="text-center fs-3">Enterprise</p>
                             <p class="text-center text-secondary">Best for large scale uses and extended redistribution
@@ -424,35 +445,35 @@
                     </div>
                 </div>
                 <div class="row py-md-5 mt-5 px-md-5">
-                    <div class="col-md-2 ps-md-5 ps-4 ms-md-5 mb-3 mb-md-0">
+                    <div class="col-md-2 ps-md-5 ms-md-5 mb-3 mb-md-0">
                         <p class="fw-bold text-white">Company</p>
                         <p><a href="#" class="text-secondary text-decoration-none">About</a></p>
                         <p><a href="#" class="text-secondary text-decoration-none">Careers</a></p>
                         <p><a href="#" class="text-secondary text-decoration-none">Brand Center</a></p>
                         <p><a href="#" class="text-secondary text-decoration-none">Blog</a></p>
                     </div>
-                    <div class="col-md-2 ps-md-5 ps-4 ms-md-2 mb-3 mb-md-0">
+                    <div class="col-md-2 ps-md-5 ms-md-2 mb-3 mb-md-0">
                         <p class="fw-bold text-white">Help center</p>
                         <p><a href="#" class="text-secondary text-decoration-none">Discord Server</a></p>
                         <p><a href="#" class="text-secondary text-decoration-none">Twitter</a></p>
                         <p><a href="#" class="text-secondary text-decoration-none">Facebook</a></p>
                         <p><a href="#" class="text-secondary text-decoration-none">Contact Us</a></p>
                     </div>
-                    <div class="col-md-2 ps-md-5 ps-4 ms-md-2 mb-3 mb-md-0">
+                    <div class="col-md-2 ps-md-5 ms-md-2 mb-3 mb-md-0">
                         <p class="fw-bold text-white">Company</p>
                         <p><a href="#" class="text-secondary text-decoration-none">About</a></p>
                         <p><a href="#" class="text-secondary text-decoration-none">Careers</a></p>
                         <p><a href="#" class="text-secondary text-decoration-none">Brand Center</a></p>
                         <p><a href="#" class="text-secondary text-decoration-none">Blog</a></p>
                     </div>
-                    <div class="col-md-2 ps-md-5 ps-4 ms-md-2 mb-3 mb-md-0">
+                    <div class="col-md-2 ps-md-5 ms-md-2 mb-3 mb-md-0">
                         <p class="fw-bold text-white">Help center</p>
                         <p><a href="#" class="text-secondary text-decoration-none">Discord Server</a></p>
                         <p><a href="#" class="text-secondary text-decoration-none">Twitter</a></p>
                         <p><a href="#" class="text-secondary text-decoration-none">Facebook</a></p>
                         <p><a href="#" class="text-secondary text-decoration-none">Contact Us</a></p>
                     </div>
-                    <div class="col-md-2 ps-md-5 ps-4 ms-md-2 mb-3 mb-md-0">
+                    <div class="col-md-2 ps-md-5 ms-md-2 mb-3 mb-md-0">
                         <p class="fw-bold text-white">Company</p>
                         <p><a href="#" class="text-secondary text-decoration-none">About</a></p>
                         <p><a href="#" class="text-secondary text-decoration-none">Careers</a></p>
@@ -474,12 +495,12 @@
         </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        <script>          
+        <script>
             AOS.init({
-                duration: 800, 
-                offset: 120,   
-                once: false,  
-                mirror: false 
+                duration: 800,
+                offset: 120,
+                once: false,
+                mirror: false
             });
         </script>
 </body>
